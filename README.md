@@ -65,6 +65,24 @@ After HTTPS is live:
 
 Colors match the Expo app tokens in `fredric/lib/theme.ts` and `fredric/global.css` (warm parchment light theme, dark mode via `prefers-color-scheme`).
 
+## GitHub
+
+Local repo is initialized on branch `main`. Create the remote and push:
+
+1. On GitHub: **New repository** → org `prorankerapp`, name `site`, public, no template, no README.
+2. From this folder:
+
+```bash
+git remote add origin https://github.com/prorankerapp/site.git
+git push -u origin main
+```
+
+Or with GitHub CLI:
+
+```bash
+gh repo create prorankerapp/site --public --source=. --remote=origin --push
+```
+
 ## Related repos
 
 - [fredric](https://github.com/prorankerapp/fredric) — mobile app
