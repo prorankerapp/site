@@ -2,7 +2,7 @@
 
 Cookie-free landing page, privacy policy, and terms of use for [prorankerapp.com](https://prorankerapp.com).
 
-Deployed via **Cloudflare Pages** from this repository.
+Deployed via **Cloudflare Workers** (static assets) from this repository. The dashboard requires a deploy command (`npx wrangler deploy`).
 
 > **Legal notice:** Privacy and terms text are first drafts for app store submission. Have a lawyer review before treating them as final, especially for GDPR compliance in Greece.
 
@@ -11,8 +11,8 @@ Deployed via **Cloudflare Pages** from this repository.
 | URL | File |
 |-----|------|
 | `/` | `index.html` |
-| `/privacy` | `privacy.html` (via `_redirects`) |
-| `/terms` | `terms.html` (via `_redirects`) |
+| `/privacy` | `privacy.html` (Wrangler `html_handling`) |
+| `/terms` | `terms.html` (Wrangler `html_handling`) |
 
 **Languages:** English (default) and Greek. Toggle with the header buttons or `?lang=el` / `?lang=en`. No cookies or `localStorage`.
 
@@ -28,17 +28,19 @@ python3 -m http.server 8080
 # http://localhost:8080
 ```
 
-Note: `_redirects` pretty URLs (`/privacy`, `/terms`) only apply on Cloudflare Pages, not on a plain static server.
+Pretty URLs (`/privacy`, `/terms`) work on Cloudflare via `html_handling` in `wrangler.jsonc`. A local static server needs `/privacy.html` and `/terms.html`.
 
-## Cloudflare Pages setup
+## Cloudflare setup
 
-1. **Workers & Pages → Create → Connect to Git** → select this repo (`prorankerapp/site`).
-2. **Build settings:**
-   - Framework preset: **None**
+The Git-connected dashboard uses **Workers Builds**, so **Deploy command is required**.
+
+1. **Workers & Pages → Create → Connect to Git** → `prorankerapp/site`.
+2. **Worker name** must match `"name"` in `wrangler.jsonc` (currently `site`). If you already created a different name, change `wrangler.jsonc` to match.
+3. **Build settings:**
    - Build command: *(empty)*
-   - Build output directory: `/` (repository root)
-3. Deploy and verify `https://<project>.pages.dev/privacy` and `/terms`.
-4. **Custom domains:** add `prorankerapp.com` and `www.prorankerapp.com`.
+   - Deploy command: `npx wrangler deploy`
+4. Deploy and verify `/`, `/privacy`, `/terms`, and `?lang=el`.
+5. **Custom domains:** add `prorankerapp.com` and `www.prorankerapp.com`.
 
 ### DNS — do not break email
 
