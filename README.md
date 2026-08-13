@@ -11,8 +11,8 @@ Deployed via **Cloudflare Workers** (static assets) from this repository. The da
 | URL | File |
 |-----|------|
 | `/` | `index.html` |
-| `/privacy` | `privacy.html` (Wrangler `html_handling`) |
-| `/terms` | `terms.html` (Wrangler `html_handling`) |
+| `/privacy` | `privacy/index.html` |
+| `/terms` | `terms/index.html` |
 
 **Languages:** English (default) and Greek. Toggle with the header buttons or `?lang=el` / `?lang=en`. No cookies or `localStorage`.
 
@@ -28,7 +28,7 @@ python3 -m http.server 8080
 # http://localhost:8080
 ```
 
-Pretty URLs (`/privacy`, `/terms`) work on Cloudflare via `html_handling` in `wrangler.jsonc`. A local static server needs `/privacy.html` and `/terms.html`.
+Pretty URLs (`/privacy`, `/terms`) are folder `index.html` files. A local static server also serves them at those paths.
 
 ## Cloudflare setup
 
