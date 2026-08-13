@@ -35,7 +35,7 @@ Pretty URLs (`/privacy`, `/terms`) work on Cloudflare via `html_handling` in `wr
 The Git-connected dashboard uses **Workers Builds**, so **Deploy command is required**.
 
 1. **Workers & Pages → Create → Connect to Git** → `prorankerapp/site`.
-2. **Worker name** must match `"name"` in `wrangler.jsonc` (currently `site`). If you already created a different name, change `wrangler.jsonc` to match.
+2. **Worker name** must match `"name"` in `wrangler.jsonc` (currently `proranker-site`). If you already created a different name, change `wrangler.jsonc` to match.
 3. **Build settings:**
    - Build command: *(empty)*
    - Deploy command: `npx wrangler deploy`
