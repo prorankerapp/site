@@ -13,6 +13,7 @@ Deployed via **Cloudflare Workers** (static assets) from this repository. The da
 | `/` | `index.html` |
 | `/privacy` | `privacy/index.html` |
 | `/terms` | `terms/index.html` |
+| `/delete-account` | `delete-account/index.html` |
 
 **Languages:** English (default) and Greek. Toggle with the header buttons or `?lang=el` / `?lang=en`. No cookies or `localStorage`.
 
@@ -61,6 +62,7 @@ After HTTPS is live:
 
 - Privacy Policy: `https://prorankerapp.com/privacy`
 - Terms: `https://prorankerapp.com/terms`
+- Account deletion (Google Play): `https://prorankerapp.com/delete-account`
 - Support / marketing URL: `https://prorankerapp.com`
 
 ## Styling
