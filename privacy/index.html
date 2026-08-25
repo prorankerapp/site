@@ -27,7 +27,7 @@
       <main class="legal-page">
         <div lang-block="en">
           <h1>Privacy Policy</h1>
-          <p class="legal-meta">Last updated: August 13, 2026</p>
+          <p class="legal-meta">Last updated: August 25, 2026</p>
 
           <p>
             This Privacy Policy describes how ProRanker (&quot;we&quot;, &quot;us&quot;) collects,
@@ -47,13 +47,16 @@
           <ul>
             <li>Email address and password (stored as a secure hash, not plain text)</li>
             <li>First and last name</li>
+            <li>Internal user ID (generated when you create an account)</li>
             <li>Role (player, manager, owner, or trainer)</li>
             <li>Team and league selections where applicable</li>
             <li>Optional link to a public player profile in our database</li>
+            <li>Optional profile photo you upload</li>
           </ul>
           <p><strong>App usage data:</strong></p>
           <ul>
             <li>Transfer messages you send and receive</li>
+            <li>Comments you post on the home feed</li>
             <li>Squad and formation edits you make for your team</li>
             <li>Session and refresh tokens to keep you signed in</li>
           </ul>
@@ -61,19 +64,31 @@
           <ul>
             <li>Push notification token (Expo) and platform (iOS or Android) if you allow notifications</li>
           </ul>
+          <p><strong>Photo library access:</strong></p>
+          <p>
+            If you choose a profile photo, the app requests permission to access your photo library
+            so you can pick an image. We do not scan or upload your library; only the photo you
+            select is sent to our servers.
+          </p>
           <p><strong>Public football data:</strong></p>
           <p>
             Match results, rosters, and player statistics are collected from publicly published
-            sources (including <a href="https://www.epsath.gr" rel="noopener noreferrer">epsath.gr</a>)
+            sources (including
+            <a href="https://www.epsath.gr" rel="noopener noreferrer">epsath.gr</a> and
+            <a href="https://www.epspeir.gr" rel="noopener noreferrer">epspeir.gr</a>)
             and used to compute rankings. This data is not personal data you provide to us.
           </p>
-          <p><strong>We do not collect:</strong> payment information, precise location, contacts,
-            advertising identifiers, or analytics on this website. This site uses no cookies.</p>
+          <p>
+            <strong>We do not collect:</strong> payment information, precise location, contacts,
+            advertising identifiers, or analytics. The app has no ads and no third-party tracking or
+            analytics SDKs. This website uses no cookies.
+          </p>
 
           <h2>3. How we use your information</h2>
           <ul>
             <li>To create and manage your account and authenticate you</li>
-            <li>To provide rankings, team features, and transfer messaging</li>
+            <li>To provide rankings, team features, transfer messaging, and the home feed</li>
+            <li>To display your profile photo on your profile, team views, and related surfaces</li>
             <li>To send push notifications about new messages (if enabled)</li>
             <li>To send password-reset codes by email when you request them</li>
             <li>To maintain security and prevent abuse</li>
@@ -82,9 +97,15 @@
           <h2>4. Legal basis (EU users)</h2>
           <p>We process your data on the following bases under the GDPR:</p>
           <ul>
-            <li><strong>Contract:</strong> providing the app and account features you sign up for</li>
+            <li>
+              <strong>Contract:</strong> providing the app and account features you sign up for,
+              including optional profile photos and user-generated content
+            </li>
             <li><strong>Legitimate interests:</strong> operating rankings from public match data and securing our services</li>
-            <li><strong>Consent:</strong> push notifications (you can withdraw consent in device settings)</li>
+            <li>
+              <strong>Consent:</strong> push notifications and photo-library access on your device
+              (you can withdraw these in device settings)
+            </li>
           </ul>
 
           <h2>5. Service providers</h2>
@@ -92,7 +113,10 @@
           <ul>
             <li><strong>Neon</strong> — PostgreSQL database hosting</li>
             <li><strong>Railway</strong> — API server hosting</li>
-            <li><strong>Cloudflare</strong> — website hosting and CDN (this site)</li>
+            <li>
+              <strong>Cloudflare</strong> — website hosting and CDN (this site), and object storage
+              (R2) for profile photos
+            </li>
             <li><strong>Expo</strong> — push notification delivery</li>
             <li><strong>Resend</strong> — transactional email (e.g. password reset)</li>
             <li><strong>Papaki</strong> — email mailbox for admin contact</li>
@@ -105,15 +129,16 @@
           <h2>6. Rankings disclaimer</h2>
           <p>
             Rankings are calculated by ProRanker from publicly available match statistics. They are
-            informational only and are <strong>not</strong> official ratings from EPSATH or any
-            football federation.
+            informational only and are <strong>not</strong> official ratings from EPSATH, EPSPEIR,
+            or any football federation.
           </p>
 
           <h2>7. Retention</h2>
           <p>
-            We keep account and message data while your account is active. Session tokens expire
-            automatically. You may request deletion of your account (see below). Public match and
-            player statistics may remain in our database as they are derived from public sources.
+            We keep account, message, comment, and profile-photo data while your account is active.
+            Session tokens expire automatically. You may request deletion of your account (see
+            below). Public match and player statistics may remain in our database as they are
+            derived from public sources.
           </p>
 
           <h2>8. Your rights</h2>
@@ -131,11 +156,13 @@
           <p>
             You can delete your account and associated personal data in the app:
             <strong>Settings &rarr; Delete account</strong>. Deletion is permanent and removes your
-            profile, transfer messages, push tokens, and active sessions.
+            profile, profile photo, transfer messages, feed comments, push tokens, and active
+            sessions.
           </p>
           <p>
-            <strong>What we delete:</strong> account credentials, profile details, transfer messages,
-            push notification tokens, and session data linked to your account.
+            <strong>What we delete:</strong> account credentials, profile details, profile photo
+            stored in Cloudflare R2, transfer messages, feed comments, push notification tokens,
+            and session data linked to your account.
           </p>
           <p>
             <strong>What we keep:</strong> public match and player statistics derived from published
@@ -174,7 +201,7 @@
 
         <div lang-block="el">
           <h1>Πολιτική απορρήτου</h1>
-          <p class="legal-meta">Τελευταία ενημέρωση: 13 Αυγούστου 2026</p>
+          <p class="legal-meta">Τελευταία ενημέρωση: 25 Αυγούστου 2026</p>
 
           <p>
             Η παρούσα Πολιτική Απορρήτου περιγράφει πώς το ProRanker (&quot;εμείς&quot;) συλλέγει,
@@ -194,13 +221,16 @@
           <ul>
             <li>Email και κωδικός πρόσβασης (αποθηκευμένος ως ασφαλές hash)</li>
             <li>Όνομα και επώνυμο</li>
+            <li>Εσωτερικό αναγνωριστικό χρήστη (δημιουργείται με τον λογαριασμό)</li>
             <li>Ρόλος (παίκτης, προπονητής, πρόεδρος ή προπονητής τεχνικός)</li>
             <li>Επιλογές ομάδας και πρωταθλήματος όπου ισχύει</li>
             <li>Προαιρετική σύνδεση με δημόσιο προφίλ παίκτη στη βάση μας</li>
+            <li>Προαιρετική φωτογραφία προφίλ που ανεβάζετε</li>
           </ul>
           <p><strong>Δεδομένα χρήσης εφαρμογής:</strong></p>
           <ul>
             <li>Μηνύματα μεταγραφών που στέλνετε και λαμβάνετε</li>
+            <li>Σχόλια που δημοσιεύετε στη ροή ειδήσεων</li>
             <li>Αλλαγές ρόστερ και τακτικής για την ομάδα σας</li>
             <li>Tokens συνεδρίας για τη διατήρηση της σύνδεσης</li>
           </ul>
@@ -208,22 +238,31 @@
           <ul>
             <li>Token push ειδοποιήσεων (Expo) και πλατφόρμα (iOS ή Android) αν επιτρέπετε ειδοποιήσεις</li>
           </ul>
+          <p><strong>Πρόσβαση στη βιβλιοθήκη φωτογραφιών:</strong></p>
+          <p>
+            Αν επιλέξετε φωτογραφία προφίλ, η εφαρμογή ζητά άδεια πρόσβασης στη βιβλιοθήκη ώστε να
+            επιλέξετε εικόνα. Δεν σαρώνουμε ούτε ανεβάζουμε τη βιβλιοθήκη σας· μόνο η φωτογραφία που
+            επιλέγετε αποστέλλεται στους διακομιστές μας.
+          </p>
           <p><strong>Δημόσια ποδοσφαιρικά δεδομένα:</strong></p>
           <p>
             Αποτελέσματα, ρόστερ και στατιστικά συλλέγονται από δημόσια δημοσιευμένες πηγές
-            (συμπεριλαμβανομένου του
-            <a href="https://www.epsath.gr" rel="noopener noreferrer">epsath.gr</a>) και
+            (συμπεριλαμβανομένων των
+            <a href="https://www.epsath.gr" rel="noopener noreferrer">epsath.gr</a> και
+            <a href="https://www.epspeir.gr" rel="noopener noreferrer">epspeir.gr</a>) και
             χρησιμοποιούνται για την κατάταξη. Δεν είναι προσωπικά δεδομένα που μας παρέχετε.
           </p>
           <p>
             <strong>Δεν συλλέγουμε:</strong> πληρωμές, ακριβή τοποθεσία, επαφές, διαφημιστικά
-            αναγνωριστικά ή analytics σε αυτόν τον ιστότοπο. Ο ιστότοπος δεν χρησιμοποιεί cookies.
+            αναγνωριστικά ή analytics. Η εφαρμογή δεν έχει διαφημίσεις ούτε SDK παρακολούθησης /
+            analytics τρίτων. Ο ιστότοπος δεν χρησιμοποιεί cookies.
           </p>
 
           <h2>3. Πώς χρησιμοποιούμε τα δεδομένα</h2>
           <ul>
-            <li>Δημιουργία και διαχείριση λογαριασμού και ελέγχος ταυτότητας</li>
-            <li>Παροχή κατάταξης, λειτουργιών ομάδας και μηνυμάτων μεταγραφών</li>
+            <li>Δημιουργία και διαχείριση λογαριασμού και έλεγχος ταυτότητας</li>
+            <li>Παροχή κατάταξης, λειτουργιών ομάδας, μηνυμάτων μεταγραφών και ροής ειδήσεων</li>
+            <li>Εμφάνιση της φωτογραφίας προφίλ στο προφίλ, στις ομάδες και σε σχετικά σημεία</li>
             <li>Push ειδοποιήσεις για νέα μηνύματα (αν είναι ενεργές)</li>
             <li>Αποστολή κωδικών επαναφοράς κωδικού μέσω email</li>
             <li>Ασφάλεια και πρόληψη κατάχρησης</li>
@@ -232,9 +271,15 @@
           <h2>4. Νομική βάση (χρήστες ΕΕ)</h2>
           <p>Επεξεργαζόμαστε δεδομένα βάσει GDPR:</p>
           <ul>
-            <li><strong>Συμβατική ανάγκη:</strong> παροχή της εφαρμογής και του λογαριασμού</li>
+            <li>
+              <strong>Συμβατική ανάγκη:</strong> παροχή της εφαρμογής και του λογαριασμού,
+              συμπεριλαμβανομένων προαιρετικής φωτογραφίας προφίλ και περιεχομένου χρήστη
+            </li>
             <li><strong>Έννομο συμφέρον:</strong> κατάταξη από δημόσια δεδομένα και ασφάλεια</li>
-            <li><strong>Συναίνεση:</strong> push ειδοποιήσεις (ανακαλείται από τις ρυθμίσεις συσκευής)</li>
+            <li>
+              <strong>Συναίνεση:</strong> push ειδοποιήσεις και πρόσβαση στη βιβλιοθήκη φωτογραφιών
+              στη συσκευή σας (ανακαλείται από τις ρυθμίσεις συσκευής)
+            </li>
           </ul>
 
           <h2>5. Πάροχοι υπηρεσιών</h2>
@@ -242,7 +287,10 @@
           <ul>
             <li><strong>Neon</strong> — φιλοξενία PostgreSQL</li>
             <li><strong>Railway</strong> — φιλοξενία API</li>
-            <li><strong>Cloudflare</strong> — φιλοξενία ιστότοπου και CDN</li>
+            <li>
+              <strong>Cloudflare</strong> — φιλοξενία ιστότοπου και CDN, και αποθήκευση αντικειμένων
+              (R2) για φωτογραφίες προφίλ
+            </li>
             <li><strong>Expo</strong> — παράδοση push ειδοποιήσεων</li>
             <li><strong>Resend</strong> — transactional email</li>
             <li><strong>Papaki</strong> — email διαχείρισης</li>
@@ -255,14 +303,14 @@
           <h2>6. Κατάταξη</h2>
           <p>
             Η κατάταξη υπολογίζεται από το ProRanker από δημόσια στατιστικά. Είναι ενημερωτική και
-            <strong>όχι</strong> επίσημη από την EPSATH ή οποιαδήποτε ομοσπονδία.
+            <strong>όχι</strong> επίσημη από την EPSATH, την EPSPEIR ή οποιαδήποτε ομοσπονδία.
           </p>
 
           <h2>7. Διάρκεια αποθήκευσης</h2>
           <p>
-            Διατηρούμε δεδομένα λογαριασμού και μηνυμάτων ενώ ο λογαριασμός είναι ενεργός. Tokens
-            λήγουν αυτόματα. Μπορείτε να ζητήσετε διαγραφή (βλ. παρακάτω). Δημόσια στατιστικά
-            αγώνων μπορεί να παραμείνουν στη βάση.
+            Διατηρούμε δεδομένα λογαριασμού, μηνυμάτων, σχολίων και φωτογραφίας προφίλ ενώ ο
+            λογαριασμός είναι ενεργός. Tokens λήγουν αυτόματα. Μπορείτε να ζητήσετε διαγραφή (βλ.
+            παρακάτω). Δημόσια στατιστικά αγώνων μπορεί να παραμείνουν στη βάση.
           </p>
 
           <h2>8. Τα δικαιώματά σας</h2>
@@ -279,11 +327,13 @@
           <p>
             Μπορείτε να διαγράψετε τον λογαριασμό και τα προσωπικά δεδομένα στην εφαρμογή:
             <strong>Ρυθμίσεις &rarr; Διαγραφή λογαριασμού</strong>. Η διαγραφή είναι οριστική και
-            αφαιρεί το προφίλ, τα μηνύματα μεταγραφών, τα push tokens και τις ενεργές συνεδρίες.
+            αφαιρεί το προφίλ, τη φωτογραφία προφίλ, τα μηνύματα μεταγραφών, τα σχόλια στη ροή, τα
+            push tokens και τις ενεργές συνεδρίες.
           </p>
           <p>
-            <strong>Τι διαγράφουμε:</strong> διαπιστευτήρια, στοιχεία προφίλ, μηνύματα μεταγραφών,
-            tokens push ειδοποιήσεων και δεδομένα συνεδρίας του λογαριασμού.
+            <strong>Τι διαγράφουμε:</strong> διαπιστευτήρια, στοιχεία προφίλ, φωτογραφία προφίλ στο
+            Cloudflare R2, μηνύματα μεταγραφών, σχόλια ροής, tokens push ειδοποιήσεων και δεδομένα
+            συνεδρίας του λογαριασμού.
           </p>
           <p>
             <strong>Τι διατηρούμε:</strong> δημόσια στατιστικά αγώνων και παικτών από δημοσιευμένες
