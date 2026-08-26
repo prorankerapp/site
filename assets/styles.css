@@ -280,3 +280,24 @@ main {
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* In-app WebView (?embed=1): drop redundant nav/footer, keep lang toggle clear of the native close button. */
+html.embed .site-header-inner {
+  padding: 0.75rem 4.5rem 0.75rem 1.25rem;
+}
+
+html.embed .header-nav > a {
+  display: none;
+}
+
+html.embed .wordmark {
+  pointer-events: none;
+}
+
+html.embed .site-footer {
+  display: none;
+}
+
+html.embed main.legal-page {
+  padding-top: 1.25rem;
+}

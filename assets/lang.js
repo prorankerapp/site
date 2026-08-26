@@ -5,6 +5,11 @@
   const SUPPORTED = ['en', 'el'];
   const DEFAULT = 'en';
 
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('embed') === '1') {
+    document.documentElement.classList.add('embed');
+  }
+
   function getLang() {
     const params = new URLSearchParams(window.location.search);
     const q = params.get('lang');
