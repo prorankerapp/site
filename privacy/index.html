@@ -28,7 +28,7 @@
       <main class="legal-page">
         <div lang-block="en">
           <h1>Privacy Policy</h1>
-          <p class="legal-meta">Last updated: August 28, 2026</p>
+          <p class="legal-meta">Last updated: October 6, 2026</p>
 
           <p>
             This Privacy Policy describes how ProRanker (&quot;we&quot;, &quot;us&quot;) collects,
@@ -49,10 +49,15 @@
             <li>Email address and password (stored as a secure hash, not plain text)</li>
             <li>First and last name</li>
             <li>Internal user ID (generated when you create an account)</li>
-            <li>Role (player, manager, owner, or trainer)</li>
+            <li>Role (player, manager, owner, trainer, or fan)</li>
             <li>Team and league selections where applicable</li>
             <li>Optional link to a public player profile in our database</li>
             <li>Optional profile photo you upload</li>
+            <li>
+              For player, manager, owner, and trainer accounts: a camera photo of an identity
+              document (including when the person is under 18), used only to resolve disputes about
+              who owns a claimed player or staff identity
+            </li>
           </ul>
           <p><strong>App usage data:</strong></p>
           <ul>
@@ -65,11 +70,13 @@
           <ul>
             <li>Push notification token (Expo) and platform (iOS or Android) if you allow notifications</li>
           </ul>
-          <p><strong>Photo library access:</strong></p>
+          <p><strong>Camera and photo library:</strong></p>
           <p>
             If you choose a profile photo, the app requests permission to access your photo library
             so you can pick an image. We do not scan or upload your library; only the photo you
-            select is sent to our servers.
+            select is sent to our servers. Player and staff registration may also request camera
+            access to photograph an identity document. Fan accounts do not require an identity
+            document.
           </p>
           <p><strong>Public football data:</strong></p>
           <p>
@@ -90,6 +97,11 @@
             <li>To create and manage your account and authenticate you</li>
             <li>To provide rankings, team features, transfer messaging, and the home feed</li>
             <li>To display your profile photo on your profile, team views, and related surfaces</li>
+            <li>
+              To verify ownership of player or staff identities when a dispute arises (identity
+              document photos are visible only to ProRanker admins; they are not shown in the app,
+              not used for advertising, and not used for face recognition)
+            </li>
             <li>To send push notifications about new messages (if enabled)</li>
             <li>To send password-reset codes by email when you request them</li>
             <li>To maintain security and prevent abuse</li>
@@ -106,10 +118,15 @@
               <strong>Contract:</strong> providing the app and account features you sign up for,
               including optional profile photos and user-generated content
             </li>
-            <li><strong>Legitimate interests:</strong> operating rankings from public match data and securing our services</li>
+            <li>
+              <strong>Legitimate interests:</strong> operating rankings from public match data,
+              securing our services, and resolving disputes over claimed player or staff identities
+              using identity-document photos where applicable
+            </li>
             <li>
               <strong>Consent:</strong> push notifications and photo-library access on your device
-              (you can withdraw these in device settings)
+              (you can withdraw these in device settings). Camera access for an identity document is
+              requested when you register as a player or staff member.
             </li>
           </ul>
 
@@ -119,8 +136,9 @@
             <li><strong>Neon</strong> — PostgreSQL database hosting</li>
             <li><strong>Railway</strong> — API server hosting</li>
             <li>
-              <strong>Cloudflare</strong> — website hosting and CDN (this site), and object storage
-              (R2) for profile photos
+              <strong>Cloudflare</strong> — website hosting and CDN (this site), object storage
+              (R2) for profile photos, and a separate private EU R2 bucket for identity-document
+              photos
             </li>
             <li><strong>Expo</strong> — push notification delivery</li>
             <li><strong>Resend</strong> — transactional email (e.g. password reset)</li>
@@ -141,9 +159,10 @@
           <h2>7. Retention</h2>
           <p>
             We keep account, message, comment, and profile-photo data while your account is active.
-            Session tokens expire automatically. You may request deletion of your account (see
-            below). Public match and player statistics may remain in our database as they are
-            derived from public sources.
+            Identity-document photos for player and staff accounts are kept while the account is
+            active and are deleted when you delete your account. Session tokens expire automatically.
+            You may request deletion of your account (see below). Public match and player statistics
+            may remain in our database as they are derived from public sources.
           </p>
 
           <h2>8. Your rights</h2>
@@ -161,12 +180,13 @@
           <p>
             You can delete your account and associated personal data in the app:
             <strong>Settings &rarr; Delete account</strong>. Deletion is permanent and removes your
-            profile, profile photo, transfer messages, feed comments, push tokens, and active
-            sessions.
+            profile, profile photo, identity-document photo (when present), transfer messages, feed
+            comments, push tokens, and active sessions.
           </p>
           <p>
             <strong>What we delete:</strong> account credentials, profile details, profile photo
-            stored in Cloudflare R2, transfer messages, feed comments, push notification tokens,
+            stored in Cloudflare R2, identity-document photo stored in the private EU Cloudflare R2
+            bucket (when present), transfer messages, feed comments, push notification tokens,
             and session data linked to your account.
           </p>
           <p>
@@ -187,8 +207,10 @@
 
           <h2>11. Children</h2>
           <p>
-            The app is not directed at children under 18. We do not knowingly collect personal data
-            from children. Contact us if you believe a child has provided us data.
+            The app is not directed at children under 16. A person who registers as a player,
+            manager, owner, or trainer is asked for a camera photo of an identity document,
+            including when they are under 18. Fan accounts do not require an identity document.
+            Contact us if you believe a child under 16 has provided us data in error.
           </p>
 
           <h2>12. Changes</h2>
@@ -206,7 +228,7 @@
 
         <div lang-block="el">
           <h1>Πολιτική απορρήτου</h1>
-          <p class="legal-meta">Τελευταία ενημέρωση: 28 Αυγούστου 2026</p>
+          <p class="legal-meta">Τελευταία ενημέρωση: 6 Οκτωβρίου 2026</p>
 
           <p>
             Η παρούσα Πολιτική Απορρήτου περιγράφει πώς το ProRanker (&quot;εμείς&quot;) συλλέγει,
@@ -227,10 +249,15 @@
             <li>Email και κωδικός πρόσβασης (αποθηκευμένος ως ασφαλές hash)</li>
             <li>Όνομα και επώνυμο</li>
             <li>Εσωτερικό αναγνωριστικό χρήστη (δημιουργείται με τον λογαριασμό)</li>
-            <li>Ρόλος (παίκτης, προπονητής, πρόεδρος ή προπονητής τεχνικός)</li>
+            <li>Ρόλος (παίκτης, προπονητής, πρόεδρος, τεχνικός ή φίλαθλος)</li>
             <li>Επιλογές ομάδας και πρωταθλήματος όπου ισχύει</li>
             <li>Προαιρετική σύνδεση με δημόσιο προφίλ παίκτη στη βάση μας</li>
             <li>Προαιρετική φωτογραφία προφίλ που ανεβάζετε</li>
+            <li>
+              Για λογαριασμούς παίκτη, προπονητή, προέδρου και τεχνικού: φωτογραφία εγγράφου
+              ταυτότητας από την κάμερα (συμπεριλαμβανομένων ατόμων κάτω των 18), μόνο για την
+              επίλυση διαφωνιών σχετικά με το ποιος κατέχει μια δηλωμένη ταυτότητα παίκτη ή στελέχους
+            </li>
           </ul>
           <p><strong>Δεδομένα χρήσης εφαρμογής:</strong></p>
           <ul>
@@ -243,11 +270,13 @@
           <ul>
             <li>Token push ειδοποιήσεων (Expo) και πλατφόρμα (iOS ή Android) αν επιτρέπετε ειδοποιήσεις</li>
           </ul>
-          <p><strong>Πρόσβαση στη βιβλιοθήκη φωτογραφιών:</strong></p>
+          <p><strong>Κάμερα και βιβλιοθήκη φωτογραφιών:</strong></p>
           <p>
             Αν επιλέξετε φωτογραφία προφίλ, η εφαρμογή ζητά άδεια πρόσβασης στη βιβλιοθήκη ώστε να
             επιλέξετε εικόνα. Δεν σαρώνουμε ούτε ανεβάζουμε τη βιβλιοθήκη σας· μόνο η φωτογραφία που
-            επιλέγετε αποστέλλεται στους διακομιστές μας.
+            επιλέγετε αποστέλλεται στους διακομιστές μας. Η εγγραφή ως παίκτης ή στέλεχος μπορεί
+            επίσης να ζητήσει πρόσβαση στην κάμερα για φωτογράφιση εγγράφου ταυτότητας. Οι
+            λογαριασμοί φιλάθλων δεν απαιτούν έγγραφο ταυτότητας.
           </p>
           <p><strong>Δημόσια ποδοσφαιρικά δεδομένα:</strong></p>
           <p>
@@ -268,6 +297,12 @@
             <li>Δημιουργία και διαχείριση λογαριασμού και έλεγχος ταυτότητας</li>
             <li>Παροχή κατάταξης, λειτουργιών ομάδας, μηνυμάτων μεταγραφών και ροής ειδήσεων</li>
             <li>Εμφάνιση της φωτογραφίας προφίλ στο προφίλ, στις ομάδες και σε σχετικά σημεία</li>
+            <li>
+              Επαλήθευση ιδιοκτησίας ταυτότητας παίκτη ή στελέχους όταν προκύπτει διαφωνία (οι
+              φωτογραφίες εγγράφου ταυτότητας είναι ορατές μόνο στους διαχειριστές του ProRanker· δεν
+              εμφανίζονται στην εφαρμογή, δεν χρησιμοποιούνται για διαφήμιση και δεν χρησιμοποιούνται
+              για αναγνώριση προσώπου)
+            </li>
             <li>Push ειδοποιήσεις για νέα μηνύματα (αν είναι ενεργές)</li>
             <li>Αποστολή κωδικών επαναφοράς κωδικού μέσω email</li>
             <li>Ασφάλεια και πρόληψη κατάχρησης</li>
@@ -284,10 +319,11 @@
               <strong>Συμβατική ανάγκη:</strong> παροχή της εφαρμογής και του λογαριασμού,
               συμπεριλαμβανομένων προαιρετικής φωτογραφίας προφίλ και περιεχομένου χρήστη
             </li>
-            <li><strong>Έννομο συμφέρον:</strong> κατάταξη από δημόσια δεδομένα και ασφάλεια</li>
+            <li><strong>Έννομο συμφέρον:</strong> κατάταξη από δημόσια δεδομένα, ασφάλεια και επίλυση διαφωνιών για δηλωμένες ταυτότητες παίκτη ή στελέχους με φωτογραφίες εγγράφου ταυτότητας όπου ισχύει</li>
             <li>
               <strong>Συναίνεση:</strong> push ειδοποιήσεις και πρόσβαση στη βιβλιοθήκη φωτογραφιών
-              στη συσκευή σας (ανακαλείται από τις ρυθμίσεις συσκευής)
+              στη συσκευή σας (ανακαλείται από τις ρυθμίσεις συσκευής). Η πρόσβαση στην κάμερα για
+              έγγραφο ταυτότητας ζητείται όταν εγγράφεστε ως παίκτης ή στέλεχος.
             </li>
           </ul>
 
@@ -297,8 +333,9 @@
             <li><strong>Neon</strong> — φιλοξενία PostgreSQL</li>
             <li><strong>Railway</strong> — φιλοξενία API</li>
             <li>
-              <strong>Cloudflare</strong> — φιλοξενία ιστότοπου και CDN, και αποθήκευση αντικειμένων
-              (R2) για φωτογραφίες προφίλ
+              <strong>Cloudflare</strong> — φιλοξενία ιστότοπου και CDN, αποθήκευση αντικειμένων
+              (R2) για φωτογραφίες προφίλ, και ξεχωριστό ιδιωτικό EU bucket R2 για φωτογραφίες
+              εγγράφου ταυτότητας
             </li>
             <li><strong>Expo</strong> — παράδοση push ειδοποιήσεων</li>
             <li><strong>Resend</strong> — transactional email</li>
@@ -318,8 +355,10 @@
           <h2>7. Διάρκεια αποθήκευσης</h2>
           <p>
             Διατηρούμε δεδομένα λογαριασμού, μηνυμάτων, σχολίων και φωτογραφίας προφίλ ενώ ο
-            λογαριασμός είναι ενεργός. Tokens λήγουν αυτόματα. Μπορείτε να ζητήσετε διαγραφή (βλ.
-            παρακάτω). Δημόσια στατιστικά αγώνων μπορεί να παραμείνουν στη βάση.
+            λογαριασμός είναι ενεργός. Οι φωτογραφίες εγγράφου ταυτότητας για παίκτες και στελέχη
+            διατηρούνται όσο ο λογαριασμός είναι ενεργός και διαγράφονται όταν διαγράφετε τον
+            λογαριασμό. Tokens λήγουν αυτόματα. Μπορείτε να ζητήσετε διαγραφή (βλ. παρακάτω).
+            Δημόσια στατιστικά αγώνων μπορεί να παραμείνουν στη βάση.
           </p>
 
           <h2>8. Τα δικαιώματά σας</h2>
@@ -336,12 +375,14 @@
           <p>
             Μπορείτε να διαγράψετε τον λογαριασμό και τα προσωπικά δεδομένα στην εφαρμογή:
             <strong>Ρυθμίσεις &rarr; Διαγραφή λογαριασμού</strong>. Η διαγραφή είναι οριστική και
-            αφαιρεί το προφίλ, τη φωτογραφία προφίλ, τα μηνύματα μεταγραφών, τα σχόλια στη ροή, τα
-            push tokens και τις ενεργές συνεδρίες.
+            αφαιρεί το προφίλ, τη φωτογραφία προφίλ, τη φωτογραφία εγγράφου ταυτότητας (όταν
+            υπάρχει), τα μηνύματα μεταγραφών, τα σχόλια στη ροή, τα push tokens και τις ενεργές
+            συνεδρίες.
           </p>
           <p>
             <strong>Τι διαγράφουμε:</strong> διαπιστευτήρια, στοιχεία προφίλ, φωτογραφία προφίλ στο
-            Cloudflare R2, μηνύματα μεταγραφών, σχόλια ροής, tokens push ειδοποιήσεων και δεδομένα
+            Cloudflare R2, φωτογραφία εγγράφου ταυτότητας στο ιδιωτικό EU bucket του Cloudflare R2
+            (όταν υπάρχει), μηνύματα μεταγραφών, σχόλια ροής, tokens push ειδοποιήσεων και δεδομένα
             συνεδρίας του λογαριασμού.
           </p>
           <p>
@@ -362,8 +403,11 @@
 
           <h2>11. Παιδιά</h2>
           <p>
-            Η εφαρμογή δεν απευθύνεται σε παιδιά κάτω των 18. Δεν συλλέγουμε εν γνώσει δεδομένα
-            παιδιών.
+            Η εφαρμογή δεν απευθύνεται σε παιδιά κάτω των 16. Όποιος εγγράφεται ως παίκτης,
+            προπονητής, πρόεδρος ή τεχνικός καλείται να φωτογραφίσει έγγραφο ταυτότητας,
+            συμπεριλαμβανομένων ατόμων κάτω των 18. Οι λογαριασμοί φιλάθλων δεν απαιτούν έγγραφο
+            ταυτότητας. Επικοινωνήστε μαζί μας αν πιστεύετε ότι παιδί κάτω των 16 μας έχει δώσει
+            δεδομένα κατά λάθος.
           </p>
 
           <h2>12. Αλλαγές</h2>
