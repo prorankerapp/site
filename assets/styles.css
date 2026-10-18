@@ -220,15 +220,53 @@ main {
   margin: 1.75rem 0 0.5rem;
 }
 
+.legal-page h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.4rem;
+}
+
 .legal-page p,
-.legal-page li {
+.legal-page li,
+.legal-page td,
+.legal-page th {
   font-size: 0.9375rem;
   margin: 0 0 0.75rem;
+}
+
+.legal-page td,
+.legal-page th {
+  margin: 0;
 }
 
 .legal-page ul {
   margin: 0 0 0.75rem;
   padding-left: 1.25rem;
+}
+
+.legal-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1rem;
+}
+
+.legal-page table {
+  width: 100%;
+  min-width: 36rem;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.legal-page th,
+.legal-page td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.6rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.legal-page th {
+  font-weight: 600;
+  background: var(--card);
 }
 
 .legal-page a {

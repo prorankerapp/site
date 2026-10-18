@@ -1,6 +1,6 @@
 # ProRanker — static site
 
-Cookie-free landing page, privacy policy, and terms of use for [prorankerapp.com](https://prorankerapp.com).
+Cookie-free landing page, privacy policy, terms of use, and Article 14 GDPR notice for [prorankerapp.com](https://prorankerapp.com).
 
 Deployed via **Cloudflare Workers** (static assets) from this repository. The dashboard requires a deploy command (`npx wrangler deploy`).
 
@@ -13,6 +13,7 @@ Deployed via **Cloudflare Workers** (static assets) from this repository. The da
 | `/` | `index.html` |
 | `/privacy` | `privacy/index.html` |
 | `/terms` | `terms/index.html` |
+| `/article-14` | `article-14/index.html` |
 | `/delete-account` | `delete-account/index.html` |
 
 **Languages:** English (default) and Greek. Toggle with the header buttons or `?lang=el` / `?lang=en`. No cookies or `localStorage`.
@@ -40,7 +41,7 @@ The Git-connected dashboard uses **Workers Builds**, so **Deploy command is requ
 3. **Build settings:**
    - Build command: *(empty)*
    - Deploy command: `npx wrangler deploy`
-4. Deploy and verify `/`, `/privacy`, `/terms`, and `?lang=el`.
+4. Deploy and verify `/`, `/privacy`, `/terms`, `/article-14`, and `?lang=el`.
 5. **Custom domains:** add `prorankerapp.com` and `www.prorankerapp.com`.
 
 ### DNS — do not break email
@@ -62,6 +63,7 @@ After HTTPS is live:
 
 - Privacy Policy: `https://prorankerapp.com/privacy`
 - Terms: `https://prorankerapp.com/terms`
+- Article 14 GDPR Notice: `https://prorankerapp.com/article-14`
 - Account deletion (Google Play): `https://prorankerapp.com/delete-account`
 - Support / marketing URL: `https://prorankerapp.com`
 
