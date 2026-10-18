@@ -139,6 +139,7 @@ a:hover {
 }
 
 main {
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 2rem 1.25rem 3rem;
@@ -245,7 +246,9 @@ main {
 }
 
 .legal-table-wrap {
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin: 0 0 1rem;
 }
 
@@ -317,6 +320,11 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+/* Flex items default to min-width: auto, so a wide table stretches the page. */
+.page-wrap > * {
+  min-width: 0;
 }
 
 /* In-app WebView (?embed=1): drop redundant nav/footer, keep lang toggle clear of the native close button. */
